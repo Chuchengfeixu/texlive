@@ -1,0 +1,100 @@
+\documentclass{report}
+	\author{Ding}
+	\title{LEARNING NOTE}
+	\usepackage{styles/zhfontcfg}
+	%\usepackage{fontspec/fontspec}
+	%\defaultfontfeatures{Mapping=tex-text}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\par中文
+This is a learning note to record my process of learning this summar vacation. I started learning advance acknowledge from July 5th. Till Augest 28th I gotta have basically mastered the tools and the programming language as is mentioned in my report.\par
+Actually, this is not only a vacation target. It's also a necessary process before being a Juvenior postgraduate, cause I have to do my opening report in the first term of Grade 2. That means I'm supposed to start from the firstyear and as earlier as possible.\par
+Time's rushing. I'm gonna do my best and try hard all along.
+\end{abstract}
+\tableofcontents
+
+\section{What I gotta learn}
+	\paragraph{Ubuntu \\ Latex \\ GitHub \\ C++ \\ Python \\ 4 sections of Digital Image Processing}
+\section{Ubuntu}
+	\paragraph{Tasks}:\par
+	1.recite the commands in common use.\par
+	2.use it everyday!
+	\paragraph{Sum up}:\par
+	Ubuntu is an OS based on Linux. The word come from a language in south Africa. Here are some frequently-used command.
+	\subparagraph{command}
+	:\par
+	man \(\):searching for help\par
+	pwd: print working directory(Where I am)\par
+	ls:list\par
+	cd:change directory\par
+	cp:copy\par
+	mv:move\par
+	rm:remove -r:remove means \par
+	rmdir:remove directory\(it has to be empty\)\par
+	mkdir:make directory\par
+	All of these commands has different functions with different suffix
+	such as "-r","-i","-l","-a"......:\par
+	apt-get install...\par
+	apt-get remove...\par
+	apt-get remove --purge...:remove the app and files\par
+	apt-get update...\par
+	apt-cache search...\par
+	dpkg -i xxx.deb:install\par
+	dpkg -r xxx.deb:remove\par
+	dpkg -r --purge xxx.deb:remove deb and files\par
+	dpkg -L xxx.deb:get the details about file copying\par
+	dpkg -info xxx.deb:get information of software package\par
+	dpkg -l:get information about software packages that have been installed\par
+	dpkg -reconfigure xxx\par
+	\subparagraph{shortcut key}:\par
+	ctrl+h: reveal the hidden files\par
+	ctrl+f: search in this page\par
+	ctrl+s: save\par
+	ctrl+alt+t: call the terminal\par
+	Find more at http://www.educity.cn/linux/660186.html
+\section{Latex}
+	\paragraph{Tasks}:\par
+	1.recite the command in common use\par
+	2.finish this report using texlive
+	\paragraph{Sum up}:\par
+	\subparagraph{Line and page}:\par
+	Two backspace and $\backslash$par:start a new line with retract.\par
+	$\backslash$$\backslash$ and $\backslash$newline: start a new line without retract. \par
+	$\backslash$linebreak[n], $\backslash$nolinebreak[n], $\backslash$pagebreak[n], $\backslash$nopagebreak[n]: start a new page.\par
+	\subparagraph{Special}:\par
+	\# \$ \% \& \_ \{ \} $\backslash$\par
+	\subparagraph{Font style}:\par
+	$\backslash$textsl\{\textsl{lean}\}\par
+	Actually, we can download template to lower working load. All you have to do is change the words in it!
+\section{GitHub}
+	\paragraph{Sum up}:\par
+	GitHub is a platform for personal users to pull their own code and download others code freely. We can easily manage code we write ourselves and Github has a large mount of source that we can also easily find what we want.\par
+	Now let's describe it more professional.Git is a distributed version control system\(DRCS\),originally written by linus Torvalds to manage the source code of the Linux kernel. And the advantage of the system is that it copies the entire virtual warehouse. So that whichever server break down, it can call the replication and recover the inaccuracy code. Besides, everytime a server do a submit there will generate a new replication. That means you can easily regain your code no matter when it was compiled. It's really convenience!\par 
+	P.S. Found an interestion website just like GitHub named "mayun".Differently, it's Chinese!
+	\subparagraph{operation method}:\par
+	set up a new file: touch FILE\par
+	write content: vim FILE\par
+	check the state: git status\par
+	trace the file: git add FILE\par
+	cancel the trace: git rm --cached FILE\par
+	commit the file: git commit -m 'message'\par
+	commit immediately: git commit -a -m 'message'\par
+	check commit history: git log$\sim$ -p:see the difference -2: see the latest two renew
+\section{OpenCV}
+	\paragraph{Sum up}:\par	
+	C++, as far as I'm concerned,is familiar with C but better. It provides better type check and compiling analyse, and it's safer than C. Since C++ is compatible with C, most code written in C can directely operating in C++. Besides, C++ is more friendly. We can easily understand it's thought.\par
+	basic start:\par
+	\(\#include <opencv/core/core.hpp>\)\par
+	\(\#include <opencv2/highgui/haigui.hpp>\)\par 
+	\(using namespace cv\)\par
+	Find more at http://blog.csdn.net/poem\_qianmo/article details/20537737
+\section{Python}
+	\paragraph{Sum up}:\par
+	Python is even easier to learn than C++. The main difference is that Python is refined, decreased unwanted parts so that Python runs a lot faster than C. On the other side, C++ can realize more function sometimes. 
+\section{4 sections of Digital Image Processing}
+	\paragraph{Tasks}:\par 
+	1.Take notes in detail.\par 
+	2.compile part histogram and part smoothing using C++
+\end{document}
